@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-25T18:36:57.477Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="5CjbGWk6k26VEv2yNRlS" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-26T07:21:45.458Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="mOY9Rn_Obq1hZlGdeWlz" version="20.0.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -28,22 +28,33 @@
         <mxCell id="zQeuFz92mXaO9W4Hp98n-1" value="&lt;p style=&quot;margin: 0px; padding: 0px; border: 0px none; line-height: 0px; overflow-wrap: break-word; font-family: Arial;&quot;&gt;&lt;span style=&quot;line-height: 14px;&quot;&gt;temp = array.slice()&lt;br&gt;temp 임시 저장 공간 생성,&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; border: 0px none; line-height: 0px; overflow-wrap: break-word; font-family: Arial;&quot;&gt;&lt;span style=&quot;line-height: 14px;&quot;&gt;숫자 자르기&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="290" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zQeuFz92mXaO9W4Hp98n-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zQeuFz92mXaO9W4Hp98n-4" target="zQeuFz92mXaO9W4Hp98n-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="zQeuFz92mXaO9W4Hp98n-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zQeuFz92mXaO9W4Hp98n-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="540" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="zQeuFz92mXaO9W4Hp98n-4" value="&lt;p style=&quot;margin: 0px; padding: 0px; border: 0px none; line-height: 0px; overflow-wrap: break-word; font-family: Arial;&quot;&gt;&lt;span style=&quot;line-height: 14px;&quot;&gt;~번째 숫자 뽑기&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; border: 0px none; line-height: 0px; overflow-wrap: break-word; font-family: Arial;&quot;&gt;&lt;span style=&quot;line-height: 14px;&quot;&gt;.push()&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="460" width="120" height="50" as="geometry" />
+        <mxCell id="zQeuFz92mXaO9W4Hp98n-4" value="~번째 숫자 뽑기&lt;br&gt;temp[commands[i][2]-1" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="145" y="460" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="zQeuFz92mXaO9W4Hp98n-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zQeuFz92mXaO9W4Hp98n-6" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+        <mxCell id="zQeuFz92mXaO9W4Hp98n-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zQeuFz92mXaO9W4Hp98n-6" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="135" y="205" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="80" y="570" />
+              <mxPoint x="80" y="645" />
               <mxPoint x="80" y="205" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="zQeuFz92mXaO9W4Hp98n-6" value="&lt;span style=&quot;font-family: Arial;&quot;&gt;i++&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="620" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1pWVo59TpCdK0ck7TlZV-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1pWVo59TpCdK0ck7TlZV-1" target="1pWVo59TpCdK0ck7TlZV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1pWVo59TpCdK0ck7TlZV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1pWVo59TpCdK0ck7TlZV-1" target="zQeuFz92mXaO9W4Hp98n-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1pWVo59TpCdK0ck7TlZV-1" value="answer에 집어넣기&lt;br&gt;answer.push()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="160" y="540" width="120" height="50" as="geometry" />
         </mxCell>
       </root>
