@@ -13,3 +13,19 @@ for(i=0; i<N; i++){
     }
 }
 console.log(temp);
+
+/* 
+let arr = input[0].split(' ');
+let N = arr[0];
+let X = arr[1];
+let A = input[1].split(' ');
+let temp = "";
+
+for(let i=0; i<N; i++){
+    let B = parseInt(A[i]);
+    if(X>B){
+        temp = `${temp + B} `;
+    }
+}
+console.log(temp);
+ */

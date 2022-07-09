@@ -1,14 +1,37 @@
 const fs = require("fs");
 const input = fs.readFileSync("/dev/stdin").toString().split('\n');
 
+let N = parseInt(input[0]);
+let A = N;
+let i = 0;
+
+while(1){
+i++
+    let AL = parseInt(A/10);
+    let AR = A%10;
+
+    let temp = AL + AR;
+
+    let tR = temp%10;
+
+    let result = parseInt(AR + tR.toString());
+
+    if(N == result) { break; }
+
+    A = result;
+}
+console.log(i);
+
+/* 
 let N = input[0];
 let i = 0;
 let A = N;  // while문 안에 있으면 실행할 때마다 A=N이 된다
 
 while(1){
     i++;
-    let result = '';
-    let temp = 0;
+    let result;
+    console.log(typeof result);
+    let temp=0;
 
     if(A<10){
         A = '0' + A;    // js에서 문자+숫자=문자
@@ -30,3 +53,4 @@ while(1){
     if( parseInt(N) == parseInt(result) ){ break; } // 반복문 종료
 }
 console.log(i);
+ */
