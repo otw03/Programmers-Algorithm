@@ -1,34 +1,24 @@
 const fs = require("fs");
 const input = fs.readFileSync("input.txt").toString().split('\n');
 
-let N;
-let i = 0;
-let max = parseInt(input[0]);
+let A = parseInt(input[0]);
+let B = parseInt(input[1]);
+let C = parseInt(input[2]);
+
+let temp = [];
 let count = 0;
 
-for(i=0; i<9; i++){
-    N = parseInt(input[i]);
-    if(max<N){
-        max = N;
-        count = i;
-    }
-}
-console.log(max);
-console.log(count+1);
-/* let A = input[1].split(' ');
+temp = (A*B*C).toString().split('');
+console.log(temp);
+console.log(temp.length);
 
-let min = parseInt(A[0]);
-let max = parseInt(A[0]);
-let result = "";
-
-for(let i=1; i<N; i++){
-    let B = parseInt(A[i]);
-    if(min>B){
-        min = B;
+for(let i=0; i<=temp.length-1; i++){
+    // temp[0]~temp[temp.length-1]하고 0~9까지 숫자 한번씩 확인하고 출력 몇번씩 쓰였는가?
+    // == 0~9 인가? 맞으면 count = count+1
+    for(let j=0; j<10; j++){
+        if(temp[i]==j){
+            count = count + 1;
+        }
     }
-    if(max<B){
-        max = B;
-    }
+    // 0~9 몇번씩 출력됐는지 적어야함
 }
-result = `${min} ${max}`;
-console.log(result); */
