@@ -2,24 +2,19 @@ const fs = require("fs");
 const input = fs.readFileSync("input.txt").toString().split('\n');
 
 let N;
-let temp = [];
+let i = 0;
 let max = parseInt(input[0]);
 let count = 0;
 
 for(i=0; i<9; i++){
     N = parseInt(input[i]);
-    temp.push(N);
     if(max<N){
-        count = count+1;
         max = N;
-        console.log(max);
+        count = i;
     }
 }
 console.log(max);
-console.log(count);
-console.log(typeof temp);
-console.log(temp);
-console.log(Math.max(...temp));
+console.log(count+1);
 /* let A = input[1].split(' ');
 
 let min = parseInt(A[0]);
