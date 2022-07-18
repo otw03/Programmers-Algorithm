@@ -16,7 +16,7 @@ console.log(result.length);
 
 /* set() 사용하여 배열에서 중복 제거가 가능하다 */
 /* 
-// 2번째 풀이
+// 2
 let A = 0;
 let temp = [];
 let count = 0;
@@ -40,7 +40,7 @@ for(let i=0; i<temp.length; i++){
 console.log(count);
  */
 /* 
-// 2
+// 3
 let A = 0;
 let temp = [];
 let result = 0;
@@ -61,7 +61,7 @@ console.log(result);
  */
 
 /*
-// 3 
+// 4
 let A = 0;
 let temp = [];
 let result = 0;
