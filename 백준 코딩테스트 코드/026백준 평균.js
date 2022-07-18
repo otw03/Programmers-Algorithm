@@ -1,56 +1,21 @@
 const fs = require("fs");
 const input = fs.readFileSync("/dev/stdin").toString().split('\n');
 
-let N = Number(input[0]);
-
-let Score = input[1].split(' ');
-console.log(typeof Score[0]);
-
-let M = Number(Math.max(...Score));
-console.log(M);
-console.log(typeof M);
-
-let NS = [];
-
-let sum = 0;
-
-for(let i=0; i<Score.length; i++){
-    let newScore = (Number(Score[i])/M)*100;
-    NS.push(newScore);
-    
-}
-console.log(NS[0]);
-console.log(NS);
-console.log(typeof NS);
-
-for(let j=0; j<NS.length; j++){
-    sum = Number(sum) + Number(NS[j]);
-}
-console.log((sum/N).toFixed(20));
-/* 
 let N = parseInt(input[0]);
-
 let Score = input[1].split(' ');
-console.log(typeof Score[0]);
-
 let M = Math.max(...Score);
-console.log(M);
-console.log(typeof M);
-
 let NS = [];
-
 let sum = 0;
 
 for(let i=0; i<Score.length; i++){
     let newScore = (parseInt(Score[i])/M)*100;
-    NS.push(newScore);
-    
+    NS.push(newScore);   
 }
-console.log(NS);
-console.log(typeof NS);
 
 for(let j=0; j<NS.length; j++){
     sum = sum + NS[j];
 }
 console.log(sum/N);
- */
+
+// 정답이 맞았다. 문제 확인하는 과정에서 콘솔적어둔 걸 백준에도 그대로 써서 틀렸던 것
+
