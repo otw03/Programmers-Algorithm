@@ -1,32 +1,29 @@
 const fs = require("fs");
 const input = fs.readFileSync("input.txt").toString().split('\n');
 
-let A = parseInt(input[0]);
-let B = parseInt(input[1]);
-let C = parseInt(input[2]);
+let N = Number(input[0]);
 
-let temp = (A*B*C).toString().split('');
+let Score = input[1].split(' ');
+console.log(typeof Score[0]);
 
-for(i=0; i<10; i++){
-    let count = 0;
-    for(let j=0; j<=temp.length-1; j++){
-        if(parseInt(temp[j])==i){
-            count = count + 1;
-        }
-    }
-    console.log(count);
+let M = Number(Math.max(...Score));
+console.log(M);
+console.log(typeof M);
+
+let NS = [];
+
+let sum = 0;
+
+for(let i=0; i<Score.length; i++){
+    let newScore = (Number(Score[i])/M)*100;
+    NS.push(newScore);
+    
 }
-// 반대로 생각해야 했다
+console.log(NS[0]);
+console.log(NS);
+console.log(typeof NS);
 
-// 처음 생각했던 내용
-/* for(let i=0; i<=temp.length-1; i++){
-    // temp[0]~temp[temp.length-1]하고 0~9까지 숫자 한번씩 확인하고 출력 몇번씩 쓰였는가?
-    // == 0~9 인가? 맞으면 count = count+1
-    for(let j=0; j<10; j++){
-        if(temp[i] == j){
-            count = count + 1;
-        }
-    }
-    // 0~9 몇번씩 출력됐는지 적어야함
+for(let j=0; j<NS.length; j++){
+    sum = Number(sum) + Number(NS[j]);
 }
-*/
+console.log((sum/N).toFixed(20));
