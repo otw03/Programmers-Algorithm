@@ -1,18 +1,12 @@
-const { count } = require("console");
 const fs = require("fs");
-const input = fs.readFileSync("input.txt").toString().trim().split('\n');
+const input = fs.readFileSync("/dev/stdin").toString().split('\n');
 
 let T = input[0];
 let N = [];
 
 for(let i = 0; i<T; i++){
     N[i] = input[i+1].trim().split('');
-}
-/* console.log(N);
-console.log(N[1]);
-console.log(N[1][9]); */
-
-for(let i = 0; i<T; i++){
+    
     let count = 0;
     let temp = [];
     
@@ -25,11 +19,11 @@ for(let i = 0; i<T; i++){
             temp.push(count);
         }
     }
-    console.log(temp);
-    let R1 = 0;
-    console.log(R1);
+
+    let result = 0;
+
     for(let k = 0; k<temp.length; k++){
-        R1 += temp[k];
+        result += temp[k];
     }
-    console.log(R1);
+    console.log(result);
 }
