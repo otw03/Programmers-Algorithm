@@ -19,7 +19,6 @@ for(let i=1; i<=C; i++){
             count++;
         }
     }
-    let R1 = (count / N)*100;
-    let R2 = R1.toFixed(3);
-    console.log(`${R2}%`);
+    let result = ( (count / N)*100 ).toFixed(3);
+    console.log(`${result}%`);
 }
