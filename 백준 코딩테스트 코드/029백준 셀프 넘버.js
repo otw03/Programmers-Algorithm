@@ -22,7 +22,7 @@ function d(N){
     return C;
 }
 
-let C = [];
+let E = [];
 // 1부터 10000까지 반복
 for(let N=1; N<=10000; N++){
     // d(N)<=10000 인 배열E를 만듦
