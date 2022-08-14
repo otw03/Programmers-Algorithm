@@ -1,36 +1,20 @@
 const fs = require("fs");
-const input = fs.readFileSync("input.txt").toString().split('\n');
+const input = fs.readFileSync("input.txt").toString();
 
+// 공백만 들어가는 경우를 생각하지 못해서 틀렸었음
 
-let S = input[0].toUpperCase();
-
-let arr = new Array(26);
-arr.fill(0);
-console.log(arr);
-let max = 0;
-
-for(let i = 0; i < S.length; i++) {
-    let num = S.charCodeAt(i)-65;
-    arr[num]++;
-        if(arr[num] > max) {
-            max = arr[num];
-        }
+// .trim() 으로 양 끝의 공백 제거
+// 공백 한 개로 구분되는 단어로 이루어진 문자열을 split(" ")로 나눔
+let str = input.trim().split(" ");
+console.log(str);
+console.log(str[0]);
+// 문자열 str의 길이를 구함
+// 공백만 들어가는 경우를 처리해 줘야 한다.
+// 공백만 들어갔을 때 str이 [ '' ] 이기 때문에
+// if(str[0] == " ") 로 예외처리 할 경우 1이 나온다.
+// 그래서 if(str[0] == "") 로 처리
+if(str[0] == "") {
+    console.log(0);
+} else {
+    console.log(str.length);
 }
-
-console.log(arr);
-console.log(max);
-
-let result = "";
-
-
-for(let i = 0; i < arr.length; i++) {
-    if(arr[i] == max) {
-        if(result == "") {
-            result = String.fromCodePoint(i+65);
-        } else {
-            result = "?";
-            break;
-        }
-    }
-}
-console.log(result);

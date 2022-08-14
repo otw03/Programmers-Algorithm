@@ -12,8 +12,12 @@ let str = input.trim().split(" ");
 // 공백만 들어갔을 때 str이 [ '' ] 이기 때문에
 // if(str[0] == " ") 로 예외처리 할 경우 1이 나온다.
 // 그래서 if(str[0] == "") 로 처리
-if(str[0] == "") {
+
+// 삼항 연산자로 수정
+str[0] == "" ? console.log(0) : console.log(str.length);
+
+/* if(str[0] == "") {
     console.log(0);
 } else {
     console.log(str.length);
-}
+} */
