@@ -1,5 +1,5 @@
-/* const fs = require("fs");
-const input = fs.readFileSync("input.txt");
+const fs = require("fs");
+const input = fs.readFileSync("/dev/stdin");
 
 let N = input.toString().trim().split(" ");
 let A = N[0]; 
@@ -20,28 +20,28 @@ if(C>D) {
     console.log(C);
 } else {
     console.log(D);
-} */
-
-/* 다른 방식의 풀이 reverse, join 사용 */
-
-const fs = require("fs");
-const input = fs.readFileSync("input.txt").toString().trim().split('').reverse().join('');
-
-let N = input.split(" ");
-
-let A = parseInt(N[0]);
-let B = parseInt(N[1]);
-
-if(A>B) {
-    console.log(A);
-} else {
-    console.log(B);
 }
 
 
 // 갑자기 문자형 변환에 어떤 게 나은지 궁금해졌다
 // String() - 어떤 형태이든 문자로 형변환
 // .toString() - null(존재하지 않는 값, 비어있는 값, 알 수 없는 값), undefined(값이 할당되지 않은 상태) 형 변환 시 오류
+
+
+/* 다른 방법 */
+// const fs = require("fs");
+// const input = fs.readFileSync("/dev/stdin").toString().trim().split('').reverse().join('');
+
+// let N = input.split(" ");
+
+// let A = parseInt(N[0]);
+// let B = parseInt(N[1]);
+
+// if(A>B) {
+//     console.log(A);
+// } else {
+//     console.log(B);
+// }
 
 // reverse() 함수는 배열의 순서를 거꾸로 만들어 줍니다.
 // array.reverse()
