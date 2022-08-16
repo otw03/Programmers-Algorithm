@@ -1,12 +1,14 @@
 const fs = require("fs");
-const input = fs.readFileSync("input.txt").toString();
+const input = fs.readFileSync("/dev/stdin").toString();
 
-
+// 전화를 걸기 위해 필요한 시간
 let sum = 0;
 for(let i=0; i<input.length; i++ ){
+    // 입력받은 값을 아스키코드로 변경 A~Z : 65~90
     let num = input[i].charCodeAt();
+    // 각 알파벳마다 걸리는 시간 result
     let result = 0
-
+    // 변경된 값의 시간
     if(num >= 65 && num <= 67) {        // ABC
         result += 3;
     } else if(num >= 68 && num <= 70) { // DEF
