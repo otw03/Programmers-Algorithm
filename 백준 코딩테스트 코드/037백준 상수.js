@@ -2,25 +2,48 @@ const fs = require("fs");
 const input = fs.readFileSync("/dev/stdin");
 
 let N = input.toString().trim().split(" ");
-let A = N[0]; 
-let B = N[1];
-
-let A1 = A[2]; // A[A.length-1]
-let A10 = A[1]; 
-let A100 = A[0];
-
-let B1 = B[2]; // A[A.length-1]
-let B10 = B[1]; 
-let B100 = B[0];
-
-let C = parseInt(A1 + A10 + A100) ;
-let D = parseInt(B1 + B10 + B100);
-
-if(C>D) {
-    console.log(C);
-} else {
-    console.log(D);
+// 바꾼 방법
+let arr = [];
+for(let i=0; i<N.length; i++) {
+    let A = N[i];
+    let B = "";
+    for(let j=A.length-1; j>=0; j--) {    
+        B += A[j];       
+    }
+    arr.push(parseInt(B));
 }
+console.log(arr);
+if(arr[0]>arr[1]) {
+    console.log(arr[0]);
+} else {
+    console.log(arr[1]);
+}
+
+
+
+// 처음 만든 것
+// let A = N[0]; 
+
+// let A1 = A[2]; // A[A.length-1]
+// let A10 = A[1]; 
+// let A100 = A[0];
+
+// let B = N[1];
+
+// let B1 = B[2]; // A[A.length-1]
+// let B10 = B[1]; 
+// let B100 = B[0];
+
+// let C = parseInt(A1 + A10 + A100) ;
+// let D = parseInt(B1 + B10 + B100);
+
+// if(C>D) {
+//     console.log(C);
+// } else {
+//     console.log(D);
+// }
+
+
 
 
 // 갑자기 문자형 변환에 어떤 게 나은지 궁금해졌다
