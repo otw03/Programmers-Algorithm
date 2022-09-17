@@ -1,6 +1,10 @@
+<<<<<<< Updated upstream
 5
 ab
 aa
 aca
 ba
 bb
+=======
+734 893
+>>>>>>> Stashed changes
