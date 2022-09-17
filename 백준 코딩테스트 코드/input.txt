@@ -1,10 +1,8 @@
-<<<<<<< Updated upstream
-5
-ab
-aa
-aca
-ba
-bb
-=======
-734 893
->>>>>>> Stashed changes
+1
+10
+13
+100
+1000
+10000
+100000
+0
