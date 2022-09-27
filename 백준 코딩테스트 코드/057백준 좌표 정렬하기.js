@@ -27,3 +27,30 @@ false || anything	|  anything
 true && anything	|  anything
 false && anything	|  false
 */
+
+
+
+
+/* 2차원 배열을 정렬하는 방법 */
+// const fs = require('fs');
+// const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
+// let input = fs.readFileSync(filePath).toString().trim().split('\n');
+
+// let N = Number(input.shift());
+// console.log(input);
+
+// let numArr = [];
+
+// for(let i =0; i< N; i++) {
+//   numArr.push(input[i].trim().split(' ').map(x=>+x));
+//   // numArr.push(input[i].trim().split(' ').map(x=>Number(x)));
+//   console.log(numArr);
+// }
+// console.log(numArr);
+
+// let answer = '';
+// numArr.sort((a,b) => {
+//   if(a[0] === b[0]) {return a[1] - b[1];}
+//   else {return a[0] - b[0];}
+// })
+// console.log(numArr);
