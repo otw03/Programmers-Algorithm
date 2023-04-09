@@ -1,8 +1,8 @@
 function solution(n) {
   // console.log(n.toString().split('')); // 	[ '1', '1', '8', '3', '7', '2' ]
-  // console.log(n.toString().split('').sort((a, b) => b -a)); // [ '8', '7', '3', '2', '1', '1' ]
-  // console.log(n.toString().split('').sort((a, b) => b -a).join('')); // 873211
-  return parseInt(n.toString().split('').sort((a, b) => b -a).join(''));
+  // console.log(n.toString().split('').sort((a, b) => b - a)); // [ '8', '7', '3', '2', '1', '1' ]
+  // console.log(n.toString().split('').sort((a, b) => b - a).join('')); // 873211
+  return parseInt(n.toString().split('').sort((a, b) => b - a).join(''));
 }
 
 // // 반복문, 배열 사용
